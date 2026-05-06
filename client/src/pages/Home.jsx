@@ -47,7 +47,7 @@ const Home = () => {
             className="text-4xl md:text-5xl font-semibold leading-tight mb-6"
           >
             Create Certificates <br />
-            in Seconds
+            for Internship / Events
           </motion.h1>
 
     

@@ -29,7 +29,7 @@ const Navbar = () => {
       <Link to="/" className="flex items-center gap-2">
         <Award size={20} className="text-white" />
         <span className="text-sm font-semibold tracking-wide hidden sm:inline">
-          Certificate Generator
+          Amaanitvam Foundation
         </span>
       </Link>
 

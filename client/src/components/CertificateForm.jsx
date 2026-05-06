@@ -8,6 +8,7 @@ const CertificateForm = ({ setData, onSubmit, isLoading }) => {
     role: "",
     event: "",
     duration: "",
+    admin: "",
     date: "",
   });
 
@@ -34,6 +35,7 @@ const CertificateForm = ({ setData, onSubmit, isLoading }) => {
     if (!formData.role.trim()) newErrors.role = "Role is required";
     if (!formData.event.trim()) newErrors.event = "Event is required";
     if (!formData.date) newErrors.date = "Date is required";
+    if(!formData.admin.trim()) newErrors.admin = "Admin name is required";
     return newErrors;
   };
 
@@ -57,6 +59,7 @@ const CertificateForm = ({ setData, onSubmit, isLoading }) => {
     { name: "role", placeholder: "Role / Position", icon: Briefcase, type: "text" },
     { name: "event", placeholder: "Event / Program", icon: Calendar, type: "text" },
     { name: "duration", placeholder: "Duration (Optional)", icon: Clock, type: "text" },
+    { name: "admin", placeholder: "Admin Name", icon: User, type: "text" },
   ];
 
   return (

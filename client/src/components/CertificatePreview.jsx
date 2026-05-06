@@ -78,7 +78,7 @@ const CertificatePreview = ({ data, certificateId, qrValue }) => {
 
           <div className="text-right">
             <p className="text-neutral-500 text-xs">Authorized By</p>
-            <p className="font-medium">Administration</p>
+            <p className="font-medium">{data.admin || "Administration"}</p>
           </div>
         </div>
       </div>
