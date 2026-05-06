@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@layer utilities {
+
+  .input {
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    background-color: #000;
+    border: 1px solid #262626;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .input::placeholder {
+    color: #737373;
+  }
+
+  .input:focus {
+    outline: none;
+    border-color: #fff;
+  }
+
+  .card {
+    border: 1px solid #262626;
+    border-radius: 0.5rem;
+    background-color: #000;
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #e5e5e5;
+  }
+
+  .btn-secondary {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border: 1px solid #262626;
+    border-radius: 0.5rem;
+    transition: border-color 0.2s ease;
+  }
+
+  .btn-secondary:hover {
+    border-color: #fff;
+  }
+
+  .section {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
